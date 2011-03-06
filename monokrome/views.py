@@ -51,6 +51,8 @@ class Home(TemplateView):
 
     """
 
+    template_name = 'home.html'
+
     def requested(self, request):
         """ renders home.html """
 
