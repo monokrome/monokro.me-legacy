@@ -1,3 +1,10 @@
 {% extends "base.html" %}
 
+{% load nav %}
+
 {% block page_title %}monokro.me{% endblock page_title %}
+
+{% block header %}
+    <div id=account-navigation>{% navtree "account" user %}</div>
+    <div id=primary-navigation>{% navtree "primary" user %}</div>
+{% endblock header %}
