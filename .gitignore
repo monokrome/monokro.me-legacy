@@ -1,0 +1,15 @@
+monokrome/settings/local.py
+
+*.pyc
+*.egg-info
+
+bin
+lib
+include
+
+*.sqlite3
+
+.*
+!.gitignore
+!.gitmodules
+

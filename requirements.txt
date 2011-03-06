@@ -1,0 +1,6 @@
+docutils
+markdown
+textile
+
+git+http://github.com/django/django.git
+
