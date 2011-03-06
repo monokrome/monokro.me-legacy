@@ -3,4 +3,5 @@ markdown
 textile
 
 git+http://github.com/django/django.git
+git+http://github.com/LimpidTech/django-navigation.git
 
