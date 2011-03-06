@@ -3,7 +3,7 @@ def project_path(dirname):
 
     import os
 
-    if 'VIRTUAL_ENV' is os.environ:
+    if 'VIRTUAL_ENV' in os.environ:
         project_directory = os.path.abspath(os.environ['VIRTUAL_ENV'])
     else:
         project_directory = os.path.expanduser('~')
