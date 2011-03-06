@@ -78,6 +78,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'monokrome.urls'
 
 TEMPLATE_DIRS = (
+    asset_path('templates'),
 )
 
 INSTALLED_APPS = (
