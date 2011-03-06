@@ -1,4 +1,4 @@
-# Django settings for monokrome project.
+# Django settings for fk project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -58,7 +58,7 @@ MEDIA_URL = ''
 ADMIN_MEDIA_PREFIX = '/media/'
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '%7ydgz*h6$+h@wn*8s2pm6l(zgbefhu0b*a6-#+vbvl*qgr6p7'
+SECRET_KEY = 'b582v#zjy5^8@a7^iito%d+h+w7@scy37)hea15boeadfs8qj9'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -75,7 +75,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'monokrome.urls'
+ROOT_URLCONF = 'fk.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -94,3 +94,11 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
+
+# Import any settings that we can from our local settings, which will allow
+# all settings to be overwritten on a per-server basis. We wont import this
+# unless it exists.
+try:
+    from monokrome.settings.local import *
+except ImportError:
+    pass
