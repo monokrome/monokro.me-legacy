@@ -3,5 +3,8 @@ markdown
 textile
 
 git+http://github.com/django/django.git
+hg+http://bitbucket.org/ubernostrum/django-profiles
+hg+https://bitbucket.org/ubernostrum/django-registration
+
 git+http://github.com/LimpidTech/django-navigation.git
 
