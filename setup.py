@@ -1,7 +1,3 @@
-# This file wont work propery because django 1.3 is still in development, and
-# is not in the Python package index. Install django 1.3 into your
-# environment prior to using this file.
-
 import os
 import sys
 
@@ -16,6 +12,7 @@ dependancies = [
     'docutils',
     'markdown',
     'textile',
+    'django',
 ]
 
 setup(name='monokro.me',
