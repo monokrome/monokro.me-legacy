@@ -89,6 +89,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'navigation',
 )
 
 # Import any settings that we can from our local settings, which will allow
