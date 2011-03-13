@@ -1,9 +1,11 @@
-var http = require('http')
+var http = require('zest/http'),
+    debug = true,
+    port_number = 80
 
-http.createServer(function(req, res) {
+if (debug) port_number = 8000
 
-	res.writeHead(200, {})
-	res.end('coming soon: monokro.me')
+server = new http.Server()
+server.port = port_number
 
-}).listen(80);
+server.listen('monokro.me/urls')
 
