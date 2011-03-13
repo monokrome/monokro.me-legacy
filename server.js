@@ -1,5 +1,5 @@
 var http = require('zest/http'),
-    debug = true,
+    debug = false,
     port_number = 80
 
 if (debug) port_number = 8000
